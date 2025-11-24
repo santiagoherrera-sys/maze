@@ -22,6 +22,6 @@ let mySprite = sprites.create(img`
     `, SpriteKind.Player)
 controller.moveSprite(mySprite, 100, 100)
 tiles.setTilemap(tilemap`level_1`)
-tiles.placeOnRandomTile(mySprite, sprites.castle.tilePath5)
+tiles.placeOnRandomTile(mySprite, sprites.builtin.forestTiles24)
 scene.cameraFollowSprite(mySprite)
 info.startCountdown(10)
