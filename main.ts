@@ -1,7 +1,7 @@
 scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.stairLarge, function (sprite, location) {
     game.over(true)
 })
-music.play(music.stringPlayable("B A E F F E A B ", 120), music.PlaybackMode.LoopingInBackground)
+music.play(music.stringPlayable("B A E F F E A B ", 120), music.PlaybackMode.UntilDone)
 let mySprite = sprites.create(img`
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
