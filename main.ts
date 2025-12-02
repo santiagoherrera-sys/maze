@@ -1,3 +1,8 @@
+scene.onOverlapTile(SpriteKind.Player, sprites.swamp.swampTile2, function (sprite, location) {
+    tiles.setTilemap(tilemap`level_4`)
+    tiles.placeOnRandomTile(mySprite, sprites.builtin.forestTiles22)
+    info.startCountdown(10)
+})
 scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.stairLarge, function (sprite2, location2) {
     tiles.setTilemap(tilemap`level_2`)
     tiles.placeOnRandomTile(mySprite, assets.tile`transparency16`)
