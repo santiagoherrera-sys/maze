@@ -1,4 +1,4 @@
-scene.onOverlapTile(SpriteKind.Player, sprites.swamp.swampTile2, function (sprite, location) {
+scene.onOverlapTile(SpriteKind.Player, sprites.builtin.forestTiles16, function (sprite, location) {
     tiles.setTilemap(tilemap`level_4`)
     tiles.placeOnRandomTile(mySprite, sprites.builtin.forestTiles22)
     info.startCountdown(10)
