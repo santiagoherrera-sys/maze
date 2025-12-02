@@ -1,11 +1,11 @@
+scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.stairLarge, function (sprite2, location2) {
+    tiles.setTilemap(tilemap`level_2`)
+    tiles.placeOnRandomTile(mySprite, assets.tile`transparency16`)
+    info.startCountdown(10)
+})
 scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.hazardHole, function (sprite, location) {
     tiles.setTilemap(tilemap`level_3`)
     tiles.placeOnRandomTile(mySprite, sprites.swamp.swampTile2)
-    info.startCountdown(10)
-})
-scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.stairLarge, function (sprite, location) {
-    tiles.setTilemap(tilemap`level_2`)
-    tiles.placeOnRandomTile(mySprite, sprites.dungeon.stairNorth)
     info.startCountdown(10)
 })
 let mySprite: Sprite = null
